@@ -3,13 +3,13 @@ runtime: python311
 build:
   commands:
     pre-build:
-      - echo 'Running PreBuild command.\n' > pre-build.txt
+      - echo 'Running PreBuild command.\t' > pre-build.txt
       - python3 --version >> pre-build.txt
     build:
-      - echo 'Running Build command.\n' > build.txt
+      - echo 'Running Build command.\t' > build.txt
       - python3 --version >> build.txt
     post-build:
-      - echo 'Running PostBuild command.\n' > post-build.txt
+      - echo 'Running PostBuild command.\t' > post-build.txt
       - python3 --version >> post-build.txt
   env:
     - name: FOO
