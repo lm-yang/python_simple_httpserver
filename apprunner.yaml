@@ -18,7 +18,6 @@ run:
   pre-run:
     - echo -n 'Running PreRun command.' > pre-run.txt
     - python3 --version >> pre-run.txt
-    - pip3 install -r requirements.txt
   command: python3 application.py
   network: 
     port: 8000
